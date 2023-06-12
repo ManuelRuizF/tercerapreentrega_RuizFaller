@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+body {
+  font-family: Montserrat;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.button-home {
+  background-color: #faaaf7; /* Green */
+  border: none;
+  color: white;
+  padding: 1px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 5px;
+}
+
+.button-home:hover {
+  background-color: #bc308b; /* Darker green */
+}
+
+h1 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+header {
+  position: sticky;
+}
+
+.navbar-expand-lg {
+  background-color: #358cefad;
+  color: #eb5bb8;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.navbar-brand {
+  float: left;
+  color: #ffffff;
+  font-size: 1.5em;
+  margin-right: 10px;
+  padding-left: 1%;
+  padding-top: 0%;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  float: right;
+}
+
+ul.navbar-nav {
+  float: center;
+  padding-right: 1%;
+}
+
+.navbar-nav li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.navbar-nav li a {
+  color: #ec2fef;
+  text-decoration: none;
+}
+
+.nav-item :hover {
+  background-color: #e0008a;
+}
+
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+}
+
+.product-card h2 {
+  margin-top: 0;
+}
+
+.product-card p {
+  margin-bottom: 0;
+}
+
+.product-card button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background-color: #ccc;
+}
+
+.navbar-collapse {
+  margin-left: 40%;
+}
+
+.card-body {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.boton-todos{
+  color: #bc308b;
+  }
+
+
+
+
+  .container form .form-row{
+    display: flex;
+    margin: 32px 0;
+  }
+  form .form-row .input-data{
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    position: relative;
+  }
+  form .form-row .textarea{
+    height: 70px;
+  }
+  .input-data input,
+  .textarea textarea{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid rgba(0,0,0, 0.12);
+  }
+  .input-data input:focus ~ label, .textarea textarea:focus ~ label,
+  .input-data input:valid ~ label, .textarea textarea:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #3498db;
+  }
+  .textarea textarea{
+    resize: none;
+    padding-top: 10px;
+  }
+  .input-data label{
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  .textarea label{
+    width: 100%;
+    bottom: 40px;
+    background: #fff;
+  }
+  .input-data .underline{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+  }
+  .input-data .underline:before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #3498db;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+  }
+  .input-data input:focus ~ .underline:before,
+  .input-data input:valid ~ .underline:before,
+  .textarea textarea:focus ~ .underline:before,
+  .textarea textarea:valid ~ .underline:before{
+    transform: scale(1);
+  }
+  .submit-btn .input-data{
+    overflow: hidden;
+    height: 45px!important;
+    width: 25%!important;
+  }
+  .submit-btn .input-data .inner{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    background: -webkit-linear-gradient(right, #ff77dd, #e34aeb, #ffc2e3, #9f01ea);
+    transition: all 0.4s;
+  }
+  .submit-btn .input-data:hover .inner{
+    left: 0;
+  }
+  .submit-btn .input-data input{
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+  @media (max-width: 700px) {
+    .container .text{
+      font-size: 30px;
+    }
+    .container form{
+      padding: 10px 0 0 0;
+    }
+    .container form .form-row{
+      display: block;
+    }
+    form .form-row .input-data{
+      margin: 35px 0!important;
+    }
+    .submit-btn .input-data{
+      width: 40%!important;
+    }
+  }
+
+/*# sourceMappingURL=estilos.css.map */
